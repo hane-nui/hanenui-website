@@ -61,7 +61,7 @@
 .friend {
   position: absolute;
   height: auto;
-  outline: 1px dashed #ccc;
+  outline: none;
 }
 .ankou {
   top: 50px;
@@ -78,6 +78,12 @@
   top: -20px;
   left: 18%;
   width: 180px;
+}
+  .whale {
+  top: -20px;
+  left: 18%;
+  width: 180px;
+  animation: floatWhale 7s ease-in-out infinite;
 }
   .penguin {
   top: 230px;
@@ -125,6 +131,19 @@
   height: 260px;
   margin-top: 60px;
   background: url("ground1.png") center bottom / cover no-repeat;
+}
+    @keyframes floatWhale {
+  0% {
+    transform: translateY(0px) rotate(-2deg);
+  }
+
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+
+  100% {
+    transform: translateY(0px) rotate(-2deg);
+  }
 }
   </style>
   
