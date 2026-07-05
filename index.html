@@ -100,7 +100,7 @@
   top: 110px;
   left: 25%;
   width: 125px;
-  animation: floatWhale 7s ease-in-out infinite;
+  animation: crabWalk 4s linear infinite;
 }
   .katsuo {
   top: 290px;
@@ -147,6 +147,7 @@
     transform: translateY(0px) rotate(-2deg);
   }
 }
+    
 @keyframes floatJinbei {
   0% {
     transform: translateY(0px) rotate(1deg);
@@ -160,17 +161,26 @@
     transform: translateY(0px) rotate(1deg);
   }
 }
- @keyframes crabWalk {
+    
+@keyframes crabWalk {
   0% {
-    transform: translateX(0px) rotate(0deg);
+    transform: translateX(0px);
+  }
+
+  25% {
+    transform: translateX(15px);
   }
 
   50% {
-    transform: translateX(30px) rotate(8deg);
+    transform: translateX(30px);
+  }
+
+  75% {
+    transform: translateX(15px);
   }
 
   100% {
-    transform: translateX(0px) rotate(0deg);
+    transform: translateX(0px);
   }
 }
   </style>
