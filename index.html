@@ -126,6 +126,7 @@
   top: 610px;
   left: 58%;
   width: 130px;
+  animation: rabbitHop 9s ease-in-out infinite;
 }
 
   .ground {
@@ -205,6 +206,28 @@
 
   100% {
     transform: translateX(40px);
+  }
+}
+
+    @keyframes rabbitHop {
+  0% {
+    transform: translateY(0px);
+  }
+
+  35% {
+    transform: translateY(0px);
+  }
+
+  42% {
+    transform: translateY(-14px);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(0px);
   }
 }
   </style>
