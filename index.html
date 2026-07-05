@@ -204,32 +204,47 @@
 }
     
 @keyframes crabWalk {
+
+  /* 右で少し様子を見る */
   0% {
-    transform: translateX(40px);
+    transform: translate(40px, 0px) rotate(2deg);
   }
 
-  20% {
-    transform: translateX(40px);
+  15% {
+    transform: translate(40px, 2px) rotate(3deg);
   }
 
-  35% {
-    transform: translateX(0px);
+  25% {
+    transform: translate(40px, 0px) rotate(1deg);
   }
 
-  50% {
-    transform: translateX(-25px);
+  /* 中央へ歩く */
+  40% {
+    transform: translate(0px, 2px) rotate(0deg);
   }
 
+  /* 左へ歩く */
+  55% {
+    transform: translate(-25px, 0px) rotate(-2deg);
+  }
+
+  /* 左で少し様子を見る */
   70% {
-    transform: translateX(-25px);
+    transform: translate(-25px, 2px) rotate(-3deg);
   }
 
-  85% {
-    transform: translateX(0px);
+  80% {
+    transform: translate(-25px, 0px) rotate(-1deg);
   }
 
+  /* ゆっくり中央へ */
+  90% {
+    transform: translate(0px, 2px) rotate(0deg);
+  }
+
+  /* 右へ戻る */
   100% {
-    transform: translateX(40px);
+    transform: translate(40px, 0px) rotate(2deg);
   }
 }
 
