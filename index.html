@@ -80,7 +80,7 @@
   width: 180px;
 }
   .whale {
-  top: -20px;
+  top: -5px;
   left: 18%;
   width: 180px;
   animation: floatWhale 7s ease-in-out infinite;
@@ -94,6 +94,7 @@
   top: 5px;
   left: 77%;
   width: 145px;
+  animation: floatJinbei 9s ease-in-out infinite;
 }
   .crab {
   top: 110px;
@@ -143,6 +144,27 @@
 
   100% {
     transform: translateY(0px) rotate(-2deg);
+  }
+}
+    @keyframes floatJinbei {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  25% {
+    transform: translate(4px, -3px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(8px, 0px) rotate(0deg);
+  }
+
+  75% {
+    transform: translate(4px, 3px) rotate(-1deg);
+  }
+
+  100% {
+    transform: translate(0px, 0px) rotate(0deg);
   }
 }
   </style>
