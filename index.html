@@ -126,7 +126,7 @@
   top: 610px;
   left: 58%;
   width: 130px;
-  animation: rabbitHop 9s ease-in-out infinite;
+  animation: rabbitHop 12s ease-in-out infinite;
 }
 
   .ground {
@@ -209,25 +209,55 @@
   }
 }
 
-    @keyframes rabbitHop {
-  0% {
-    transform: translateY(0px);
+@keyframes rabbitHop {
+
+  /* 待機 */
+  0%, 35% {
+    transform: translateY(0) rotate(0deg);
   }
 
-  35% {
-    transform: translateY(0px);
+  /* 少ししゃがむ */
+  38% {
+    transform: translateY(4px) rotate(0deg);
   }
 
-  42% {
-    transform: translateY(-14px);
+  /* 小ジャンプ */
+  43% {
+    transform: translateY(-14px) rotate(-2deg);
   }
 
-  50% {
-    transform: translateY(0px);
+  /* 着地 */
+  48% {
+    transform: translateY(0) rotate(1deg);
   }
 
+  /* 少ししゃがむ */
+  53% {
+    transform: translateY(5px) rotate(0deg);
+  }
+
+  /* 大ジャンプ */
+  60% {
+    transform: translateY(-32px) rotate(-5deg);
+  }
+
+  /* 着地 */
+  68% {
+    transform: translateY(0) rotate(4deg);
+  }
+
+  /* 耳がぴこっと揺れるイメージ */
+  72% {
+    transform: translateY(0) rotate(-2deg);
+  }
+
+  76% {
+    transform: translateY(0) rotate(1deg);
+  }
+
+  /* またじっとする */
   100% {
-    transform: translateY(0px);
+    transform: translateY(0) rotate(0deg);
   }
 }
   </style>
