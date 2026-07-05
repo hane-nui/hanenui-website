@@ -100,7 +100,7 @@
   top: 110px;
   left: 25%;
   width: 125px;
-  animation: crabWalk 4s linear infinite;
+  animation: crabWalk 6s ease-in-out infinite;
 }
   .katsuo {
   top: 290px;
@@ -172,27 +172,23 @@
     
 @keyframes crabWalk {
   0% {
+    transform: translateX(15px);
+  }
+
+  25% {
     transform: translateX(0px);
   }
 
-  15% {
-    transform: translateX(0px);
+  50% {
+    transform: translateX(-15px);
   }
 
-  35% {
-    transform: translateX(18px);
-  }
-
-  70% {
-    transform: translateX(18px);
-  }
-
-  85% {
+  75% {
     transform: translateX(0px);
   }
 
   100% {
-    transform: translateX(0px);
+    transform: translateX(15px);
   }
 }
   </style>
