@@ -213,51 +213,58 @@
 
   /* 待機 */
   0%, 35% {
-    transform: translateY(0) rotate(0deg);
+    transform: translate(0, 0) rotate(0deg);
   }
 
-  /* 少ししゃがむ */
+  /* しゃがむ */
   38% {
-    transform: translateY(4px) rotate(0deg);
+    transform: translate(0, 4px) rotate(0deg);
   }
 
-  /* 小ジャンプ */
-  43% {
-    transform: translateY(-14px) rotate(-2deg);
+  /* ホップ① */
+  42% {
+    transform: translate(-12px, -16px) rotate(-2deg);
   }
 
   /* 着地 */
-  48% {
-    transform: translateY(0) rotate(1deg);
+  46% {
+    transform: translate(-18px, 0) rotate(1deg);
   }
 
-  /* 少ししゃがむ */
-  53% {
-    transform: translateY(5px) rotate(0deg);
+  /* しゃがむ */
+  50% {
+    transform: translate(-18px, 4px) rotate(0deg);
   }
 
-  /* 大ジャンプ */
+  /* ホップ② */
+  55% {
+    transform: translate(-34px, -22px) rotate(-3deg);
+  }
+
+  /* 着地 */
   60% {
-    transform: translateY(-42px) rotate(-5deg);
+    transform: translate(-42px, 0) rotate(2deg);
+  }
+
+  /* 大ジャンプ！ */
+  68% {
+    transform: translate(-70px, -48px) rotate(-6deg);
   }
 
   /* 着地 */
-  68% {
-    transform: translateY(0) rotate(4deg);
+  75% {
+    transform: translate(-82px, 0) rotate(3deg);
   }
 
-  /* 耳がぴこっと揺れるイメージ */
-  72% {
-    transform: translateY(0) rotate(-2deg);
+  /* チューリップを眺める */
+  95% {
+    transform: translate(-82px, 0) rotate(1deg);
   }
 
-  76% {
-    transform: translateY(0) rotate(1deg);
-  }
-
-  /* またじっとする */
+  /* 一瞬で元へ戻る */
+  99%,
   100% {
-    transform: translateY(0) rotate(0deg);
+    transform: translate(0, 0) rotate(0deg);
   }
 }
   </style>
